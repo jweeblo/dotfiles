@@ -1,0 +1,103 @@
+/*******************************************************************************
+ * ROFI THEME USING THE CATPPUCCIN MACCHIATO PALETTE
+ * Adapted from: https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+
+* {
+    font:   "FiraCode Nerd Font Medium 12";
+
+    /* Catppuccin Macchiato color palette */
+    base:       #24273a;
+    mantle:     #1e2030;
+    text:       #cad3f5;
+    pink:       #f5bde6;
+    yellow:     #eed49f;
+
+    accent-color:     @pink;
+    urgent-color:     #eed49f;
+
+    background-color:   transparent;
+    text-color:         @text;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    location:   center;
+    width:      480;
+
+    background-color:   @base;
+}
+
+inputbar {
+    spacing:    8px; 
+    padding:    8px;
+
+    background-color:   @mantle;
+}
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+textbox {
+    padding:            8px;
+    background-color:   @mantle;
+}
+
+listview {
+    padding:    4px 0;
+    lines:      8;
+    columns:    1;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    8px;
+    spacing:    8px;
+}
+
+element normal normal {
+    text-color: @text;
+}
+
+element normal urgent {
+    text-color: @urgent-color;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element alternate active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @base;
+}
+
+element selected normal, element selected active {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @urgent-color;
+}
+
+element-icon {
+    size:   0.8em;
+}
+
+element-text {
+    text-color: inherit;
+}
+
+
